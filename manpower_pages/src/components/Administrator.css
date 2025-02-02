@@ -1,0 +1,120 @@
+.admin-container {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center; /* จัดให้อยู่กึ่งกลางแนวตั้ง */
+  height: 94vh; /* ตั้งความสูงของ container ให้เต็มหน้าจอ */
+}
+
+.user-management-box {
+  width: 85%; 
+  height: 60vh; 
+  overflow-y: auto;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  padding: 20px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  background-color: #f9f9f9;
+  margin: auto; /* จัดให้อยู่ตรงกลาง */
+}
+
+.user-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.user-table th, .user-table td {
+  border: 1px solid #ddd;
+  padding: 8px;
+  text-align: center; /* จัดปุ่มให้อยู่ตรงกลางแนวนอน */
+  vertical-align: middle; /* จัดปุ่มให้อยู่ตรงกลางแนวตั้ง */
+  width: 150px; /* เพิ่มความกว้างคงที่ให้กับทุกคอลัมน์ */
+}
+
+.user-table th {
+  background-color: #f4f4f4;
+  color: #333;
+}
+
+.user-table td input[type="text"],
+.user-table td input[type="password"],
+.user-table td select {
+  width: 100%;
+  padding: 5px;
+  margin: 0;
+  box-sizing: border-box;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+}
+
+.add-user-btn, .save-btn, .delete-btn, .edit-btn, .cancel-user-btn {
+  padding: 6px 12px;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+  text-align: center;
+  display: inline-block;
+}
+
+.add-user-btn {
+  margin-top: 10px;
+}
+
+.save-btn {
+  background-color: #4CAF50;
+}
+
+.delete-btn {
+  background-color: #f44336;
+}
+
+.edit-btn {
+  background-color: #ffa500; /* สีส้มสำหรับปุ่มแก้ไข */
+  margin-right: 5px;
+}
+
+.cancel-user-btn {
+  background-color: #f44336; /* สีแดงสำหรับปุ่มยกเลิก */
+}
+
+.add-user-btn:hover, .save-btn:hover, .delete-btn:hover, .edit-btn:hover, .cancel-user-btn:hover {
+  opacity: 0.8;
+}
+
+.no-data {
+  text-align: center;
+  padding: 10px;
+  color: #888;
+}
+
+.search-wrapper {
+  display: flex; 
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.search-input {
+  flex: 1; /* ขยายช่องค้นหาให้เต็มพื้นที่ที่มีอยู่ */
+  margin-right: 10px;
+  max-width: 200px; /* ตั้งความกว้างสูงสุดของช่องค้นหา */
+}
+
+.password-wrapper {
+  position: relative;
+}
+
+.password-wrapper input {
+  padding-right: 30px; /* เผื่อพื้นที่สำหรับไอคอนลูกตา */
+}
+
+.password-wrapper span {
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  cursor: pointer;
+}

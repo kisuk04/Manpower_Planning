@@ -1,0 +1,139 @@
+.admin-container {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center; /* จัดให้อยู่กึ่งกลางแนวตั้ง */
+  height: 94vh; /* ตั้งความสูงของ container ให้เต็มหน้าจอ */
+}
+
+.employee-management-box {
+  width: 70%; 
+  height: 60vh; 
+  overflow-y: auto;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  padding: 20px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  background-color: #f9f9f9;
+  margin: auto; /* จัดให้อยู่ตรงกลาง */
+}
+
+.employee-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.employee-table th, .employee-table td {
+  border: 1px solid #ddd;
+  padding: 8px;
+  text-align: center; /* จัดให้อยู่กลาง */
+  vertical-align: middle;
+  width: 150px; /* กำหนดความกว้างคงที่ให้กับคอลัมน์ */
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.employee-table th {
+  width: 150px; /* กำหนดความกว้างคงที่ให้กับ header */
+  color: #333;
+}
+
+.employee-table td {
+  border: 1px solid #ddd;
+  padding: 8px;
+  text-align: center; /* จัดให้อยู่กลาง */
+  vertical-align: middle;
+  width: 150px; /* รักษาความกว้างของคอลัมน์ */
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.employee-table td input[type="text"],
+.employee-table td input[type="password"],
+.employee-table td select {
+  width: 100%;
+  padding: 5px;
+  margin: 0;
+  box-sizing: border-box;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+}
+
+.employee-table td button {
+  margin: 0 5px; /* ระยะห่างระหว่างปุ่ม */
+}
+
+/* ปรับสไตล์ปุ่ม */
+.add-employee-btn, .save-btn, .delete-btn, .edit-btn, .cancel-employee-btn {
+  padding: 6px 12px;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+  text-align: center;
+  display: inline-block;
+}
+
+.add-employee-btn {
+  margin-top: 10px;
+}
+
+.save-btn {
+  background-color: #4CAF50;
+}
+
+.delete-btn {
+  background-color: #f44336;
+}
+
+.edit-btn {
+  background-color: #ffa500; /* สีส้มสำหรับปุ่มแก้ไข */
+}
+
+.cancel-employee-btn {
+  background-color: #f44336; /* สีแดงสำหรับปุ่มยกเลิก */
+}
+
+.add-employee-btn:hover, .save-btn:hover, .delete-btn:hover, .edit-btn:hover, .cancel-employee-btn:hover {
+  opacity: 0.8;
+}
+
+.no-data {
+  text-align: center;
+  padding: 10px;
+  color: #888;
+}
+
+.search-wrapper {
+  display: flex; 
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.search-input {
+  flex: 1; /* ขยายช่องค้นหาให้เต็มพื้นที่ที่มีอยู่ */
+  margin-right: 10px;
+  max-width: 200px; /* ตั้งความกว้างสูงสุดของช่องค้นหา */
+}
+
+.password-wrapper span {
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  cursor: pointer;
+}
+
+.employee-table td input[type="date"] {
+  width: 120px; /* กำหนดความกว้างให้กระชับ */
+  padding: 5px;
+  font-size: 14px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
